@@ -233,6 +233,10 @@ function scormcloud_scale_used($scormcloudid, $scaleid) {
  * @return boolean True if the scale is used by any scormcloud
  */
 function scormcloud_scale_used_anywhere($scaleid) {
+    /*
+    
+    // Disabled, since it is not implemented in Moodle 2.7
+    
     global $DB;
 
     if ($scaleid and $DB->record_exists('scormcloud', 'grade', -$scaleid)) {
@@ -240,6 +244,8 @@ function scormcloud_scale_used_anywhere($scaleid) {
     } else {
         return false;
     }
+    */
+    return false;
 }
 
 function scormcloud_install() {
